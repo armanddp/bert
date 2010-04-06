@@ -7,8 +7,11 @@ require 'bert/bert'
 require 'bert/types'
 
 begin
+  # Switch to pure ruby implementation for overriding behavior
+  # in bertrpc
+  require 'bert/decode'
   # try to load the C extension
-  require 'bert/c/decode'
+  # require 'bert/c/decode'
 rescue LoadError
   # fall back on the pure ruby version
   require 'bert/decode'
