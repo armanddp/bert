@@ -1,7 +1,7 @@
 
 require 'stringio'
 
-$:.unshift File.join(File.dirname(__FILE__), *%w[.. ext])
+$:.unshift File.join(File.dirname(__FILE__), *%w[..])
 
 require 'bert/bert'
 require 'bert/types'

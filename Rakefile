@@ -13,7 +13,7 @@ begin
     gem.add_development_dependency("thoughtbot-shoulda")
     gem.require_paths = ["lib", "ext"]
     gem.files.include("ext")
-    gem.extensions << 'ext/bert/c/extconf.rb'
+    # gem.extensions << 'ext/bert/c/extconf.rb'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
